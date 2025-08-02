@@ -1,0 +1,138 @@
+/* Container */
+.product-manager {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+.product-manager h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Centered Form Styling */
+.product-manager form {
+  background-color: #fdfdfd;
+  padding: 25px;
+  margin: 0 auto 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  max-width: 800px;
+}
+
+/* Inputs, selects, textarea, button */
+.product-manager input,
+.product-manager select,
+.product-manager textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.product-manager textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.product-manager button {
+  grid-column: span 2;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-manager button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.product-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.product-table td img {
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Action Buttons */
+.product-table button {
+  padding: 6px 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.product-table button:first-of-type {
+  background-color: #28a745;
+  color: white;
+}
+
+.product-table button:first-of-type:hover {
+  background-color: #218838;
+}
+
+.product-table button:last-of-type {
+  background-color: #dc3545;
+  color: white;
+}
+
+.product-table button:last-of-type:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .product-manager form {
+    grid-template-columns: 1fr;
+  }
+
+  .product-manager button {
+    grid-column: span 1;
+  }
+
+  .product-table th,
+  .product-table td {
+    font-size: 0.9rem;
+    padding: 10px 8px;
+  }
+
+  .product-table td img {
+    height: 50px;
+  }
+}
